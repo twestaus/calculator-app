@@ -19,6 +19,17 @@ body {
   flex-direction: column;
 }
 
+.operator {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: right;
+  padding-block: 20px;
+  padding-inline: 10px;
+  min-height: 20px;
+  font-size: 1rem;
+  content: "";
+}
 .output {
   background-color: black;
   color: white;
@@ -59,9 +70,25 @@ button {
   color: black;
 }
 
+button:hover.bg-grey {
+  background-color: lightgray;
+}
+
+button:active.bg-grey {
+  background-color: #666;
+}
+
 .bg-orange {
   background-color: chocolate;
   color: white;
+}
+
+button:hover.bg-orange {
+  background-color: coral;
+}
+
+button:active.bg-orange {
+  background-color: tomato;
 }
 
 .zero {

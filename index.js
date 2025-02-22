@@ -2,6 +2,7 @@ let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
 let screen = document.querySelector(".output");
+let operatorOut = document.querySelector(".operator");
 let answered = false;
 
 function buttonClick(value) {
@@ -88,6 +89,7 @@ function handleSymbol(value) {
 
 function rerender() {
   screen.innerText = buffer;
+  operatorOut.innerText = previousOperator;
 }
 
 function init() {
